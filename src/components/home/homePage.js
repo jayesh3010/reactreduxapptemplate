@@ -16,7 +16,7 @@ class HomePage extends React.Component {
         //debugger;
         return (
             <div className="jumbotron">
-                <h2>Poms Lab Agent</h2>
+                <h2>Home</h2>
                 <HomeList lineitems={this.props.homeinfo}/>
             </div>
         );

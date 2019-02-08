@@ -19,7 +19,10 @@ app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('/api/homeinfo',(req,res)=>{
 
-  const homeinfo = {"msg":"Hello world from api/homeinfo..."};
+  const homeinfo =[
+    {id:1,title1:"Hello ", title2:"World"},
+    {id:2,title1:"Hello another ", title2:"world"}
+  ];
 
   //setTimeout(()=>{
     res.writeHead(200, {"Content-Type": "application/json"});
@@ -28,7 +31,7 @@ app.get('/api/homeinfo',(req,res)=>{
 
 });
 
-app.get('/', function(req, res) {
+app.get('/app', function(req, res) {
   //console.log("in the srcServer get requets....");
   res.sendFile(path.join( __dirname, '../src/index.html'));
 });
