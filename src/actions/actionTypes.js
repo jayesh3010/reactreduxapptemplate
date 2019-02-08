@@ -1,0 +1,5 @@
+export const LOAD_HOME_INFO = "LOAD_HOME_INFO";
+export const LOAD_HOME_INFO_ERROR = "LOAD_HOME_INFO_ERROR";
+
+
+
